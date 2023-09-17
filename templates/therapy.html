@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS110 - Therapy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css"> <!-- Include the CSS file -->
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" class="logo">GS110</a>
+    </div>
+
+    <!-- Instruction -->
+    <p class="instruction">Raise the volume on your computer until you can comfortably hear the white noise.</p>
+
+    <!-- Canvas for Audio Visualization -->
+
+    <!-- Button to start audio and visualization -->
+    <button onclick="startAudioAndVisual()">Start Treatment</button>
+
+
+    <!-- Timer -->
+    <div class="timer">
+        <span id="timer">03:00:00</span>
+    </div>
+
+    <!-- Add your other HTML content here -->
+
+    <!-- Link to external JavaScript -->
+    <script src="/static/js/therapy.js"></script>
+    <script src="/static/js/scripts.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            startWhiteNoise();
+        });
+    </script>
+
+    <!-- Next Button -->
+    <button class="next-button" onclick="location.href='/'">Finish</button>
+
+    <!-- Link to external JavaScript -->
+    <script src="/static/js/therapy.js"></script> <!-- Use therapy.js instead of scripts.js -->
+</body>
+
+</html>

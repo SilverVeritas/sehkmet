@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS110 - Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/fb.css"> <!-- Include the CSS file -->
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" class="logo">GS110</a>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="feedback-form">
+        <h1>Feedback</h1>
+        <form id="feedbackForm">
+            <!-- Question 1 -->
+            <label for="question1">How well is your tinnitus being managed?</label>
+            <textarea id="question1" name="question1" rows="6" placeholder="Enter your feedback here..."></textarea>
+
+            <!-- Question 2 -->
+            <label for="question2">Are there any specific challenges you're facing in managing your tinnitus?</label>
+            <textarea id="question2" name="question2" rows="6" placeholder="Enter your feedback here..."></textarea>
+
+            <!-- Question 3 -->
+            <label for="question3">What improvements would you like to see in your tinnitus management?</label>
+            <textarea id="question3" name="question3" rows="6" placeholder="Enter your feedback here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="/static/js/fb.js"></script> <!-- Create a new JavaScript file for handling feedback form functionality -->
+</body>
+
+</html>

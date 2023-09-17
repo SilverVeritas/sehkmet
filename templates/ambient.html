@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient Sounds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/ambient.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="logo">GS110</a>
+    </div>
+    <div class="container">
+        <div class="ambient-sound">
+            <p>Ocean</p>
+            <audio loop>
+                <source src="/static/ocean.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+        <div class="ambient-sound">
+            <p>Birds</p>
+            <audio loop>
+                <source src="/static/bird.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+        <div class="ambient-sound">
+            <p>Whale</p>
+            <audio loop>
+                <source src="/static/whale.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+        <div class="ambient-sound">
+            <p>Rain</p>
+            <audio loop>
+                <source src="/static/rain.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+        <div class="ambient-sound">
+            <p>Talking</p>
+            <audio loop>
+                <source src="/static/talking.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+        <div class="ambient-sound">
+            <p>Fan</p>
+            <audio loop>
+                <source src="/static/fan.mp3" type="audio/mp3">
+            </audio>
+            <div class="volume-control">
+                <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider">
+            </div>
+        </div>
+        
+    <script src="/static/js/ambient.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

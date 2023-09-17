@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS110 - Step Two</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+            padding-top: 80px; /* account for the fixed header */
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .logo:hover {
+            color: #555;
+        }
+
+        .instruction {
+            font-size: 1.5em;
+            margin: 50px 0 25vh; /* Adjusted the margin */
+            text-align: center;
+        }
+
+        canvas {
+            width: 100%;
+            max-width: 800px;
+            height: 100px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .next-button {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" class="logo">GS110</a>
+    </div>
+
+<!-- Instruction -->
+<p class="instruction">Raise the volume on your computer until you can comfortably hear the white noise.</p>
+
+<!-- Canvas for Audio Visualization -->
+<canvas id="audioVisualizer"></canvas>
+
+<!-- Button to start audio and visualization -->
+<button onclick="startAudioAndVisual()">Start Treatment</button>
+
+<!-- Next Button -->
+<button class="next-button" onclick="location.href='/3'">Next</button>
+
+
+<!-- Link to external JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>
